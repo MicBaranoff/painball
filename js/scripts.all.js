@@ -11,5 +11,17 @@ $(document).ready(function(){
         nextArrow: 'section.mainbanner .holder .next',
         appendDots: '.mainbannerslider-dots'
       });
+
+      $('.reviews-slider').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        appendDots: '.reviews-slider-dots'
+      });
+
+      $('.countdown').countdownTimer('2020/04/25 12:00');
+
 });
 },{}]},{},[1]);
