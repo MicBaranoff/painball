@@ -18,7 +18,21 @@ $(document).ready(function(){
         slidesToScroll: 1,
         arrows: false,
         dots: true,
-        appendDots: '.reviews-slider-dots'
+        appendDots: '.reviews-slider-dots',
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+
+            }
+          }
+        ]
+      });
+
+      $('.burger').on('click', function(){
+        $('header .header-nav').toggleClass('active');
       });
 
       $('.countdown').countdownTimer('2020/04/25 12:00');
